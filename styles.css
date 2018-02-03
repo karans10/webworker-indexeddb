@@ -1,0 +1,9 @@
+li {
+    list-style-type: none;
+}
+.margin-filters {
+    margin: 2em  auto;
+}
+.active{
+    text-decoration: underline;
+}

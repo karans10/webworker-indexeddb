@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Todo App: webowrker and indexedDB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        li {
+            list-style-type: none;
+        }
+        .margin-filters {
+            margin: 2em  auto;
+        }
+        .active{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Todos</h1>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input id="newTodo" class="form-control" placeholder="new todo" type="text" name="newTodo">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="button" onclick="addTodo()">Add</button>
+            </span>
+        </div>
+
+
+
+
+        <div class="text-right margin-filters">
+            <a onclick="readAll()" href="javascript:void(0)">Refresh</a>
+        </div>
+        <ul id="todos"></ul>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
